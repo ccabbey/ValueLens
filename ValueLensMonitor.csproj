@@ -127,71 +127,50 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="NewConcept\Chart\ICanPlotHistogram.cs" />
-    <Compile Include="NewConcept\Data\IVolumeDataProvider.cs" />
-    <Compile Include="NewConcept\Data\MeasureData.cs" />
-    <Compile Include="NewConcept\Data\VolumeData.cs" />
-    <Compile Include="NewConcept\Statistics\BasicStats.cs" />
-    <Compile Include="NewConcept\Statistics\Common.cs" />
-    <Compile Include="Old\Model\DBHelper.cs" />
-    <Compile Include="NewConcept\View\IndicatorState.cs" />
-    <Compile Include="NewConcept\View\IStatsProvider.cs" />
-    <Compile Include="NewConcept\View\StatsIndicator.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="NewConcept\View\StatsIndicator.Designer.cs">
-      <DependentUpon>StatsIndicator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Old\Model\HistogramSerie.cs" />
-    <Compile Include="Old\Model\SerieBase.cs" />
-    <Compile Include="Old\Model\DataRepo.cs" />
-    <Compile Include="Old\Model\LineSerie.cs" />
-    <Compile Include="NewConcept\Chart\Point.cs" />
-    <Compile Include="NewConcept\Chart\SerieBase.cs" />
-    <Compile Include="NewConcept\Product.cs" />
-    <Compile Include="Old\Presenter\AutoSizeController.cs" />
-    <Compile Include="Old\Presenter\ChartPresenter.cs" />
-    <Compile Include="Old\View\SplashScreenForm.cs">
+    <Compile Include="src\Model\DBHelper.cs" />
+    <Compile Include="src\Model\HistogramSerie.cs" />
+    <Compile Include="src\Model\SerieBase.cs" />
+    <Compile Include="src\Model\DataRepo.cs" />
+    <Compile Include="src\Model\LineSerie.cs" />
+    <Compile Include="src\Presenter\AutoSizeController.cs" />
+    <Compile Include="src\Presenter\ChartPresenter.cs" />
+    <Compile Include="src\View\SplashScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Old\View\SplashScreenForm.Designer.cs">
+    <Compile Include="src\View\SplashScreenForm.Designer.cs">
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Old\View\AboutForm.cs">
+    <Compile Include="src\View\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Old\View\AboutForm.Designer.cs">
+    <Compile Include="src\View\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Old\View\IMainFormView.cs" />
-    <Compile Include="Old\View\MainForm.cs">
+    <Compile Include="src\View\IMainFormView.cs" />
+    <Compile Include="src\View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Old\View\MainForm.Designer.cs">
+    <Compile Include="src\View\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Old\Model\NewConceptDBHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Old\View\MainForm.UIUpdate.cs">
+    <Compile Include="src\View\MainForm.UIUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Old\View\SettingsView.cs">
+    <Compile Include="src\View\SettingsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Old\View\SettingsView.Designer.cs">
+    <Compile Include="src\View\SettingsView.Designer.cs">
       <DependentUpon>SettingsView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="NewConcept\View\StatsIndicator.resx">
-      <DependentUpon>StatsIndicator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Old\View\AboutForm.resx">
+    <EmbeddedResource Include="src\View\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Old\View\MainForm.resx">
+    <EmbeddedResource Include="src\View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Old\View\SplashScreenForm.resx">
+    <EmbeddedResource Include="src\View\SplashScreenForm.resx">
       <DependentUpon>SplashScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -204,7 +183,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Old\View\SettingsView.resx">
+    <EmbeddedResource Include="src\View\SettingsView.resx">
       <DependentUpon>SettingsView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -239,8 +218,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewConcept\Utilities\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

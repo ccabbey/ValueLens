@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ValueLens.NewConcept
+namespace ValueLens.Model
 {
     public class DBHelper
     {

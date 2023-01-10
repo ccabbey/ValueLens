@@ -30,7 +30,7 @@ namespace ValueLens.View
             SplashScreen welcome = new SplashScreen();
             try
             {
-                welcome = new SplashScreen();
+                //welcome = new SplashScreen();
                 welcome.StartPosition = FormStartPosition.CenterScreen;
                 welcome.ShowDialog();
                 //等待两秒，使主线程充分显示
