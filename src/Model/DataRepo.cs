@@ -24,9 +24,9 @@ namespace ValueLens.Model
 
 
 
-        public NewConcept.DBHelper Helper { get { return service; } }
+        public DBHelper Helper { get { return service; } }
 
-        private NewConcept.DBHelper service;
+        private DBHelper service;
 
         public DataTable RawTable { get; private set; }
 
@@ -45,7 +45,7 @@ namespace ValueLens.Model
         {
             if (service == null)
             {
-                service = new NewConcept.DBHelper();
+                service = new Model.DBHelper();
             }
             Helper.CreateConnection();
             return true;
