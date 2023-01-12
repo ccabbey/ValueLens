@@ -132,32 +132,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config.cs" />
-    <Compile Include="NewConcept\Chart\ICanPlotHistogram.cs" />
-    <Compile Include="NewConcept\Data\IVolumeDataProvider.cs" />
-    <Compile Include="NewConcept\Data\MeasureData.cs" />
-    <Compile Include="NewConcept\Data\VolumeData.cs" />
-    <Compile Include="NewConcept\Statistics\BasicStats.cs" />
-    <Compile Include="NewConcept\Statistics\Common.cs" />
-    <Compile Include="NewConcept\Utilities\DBHelper.cs" />
-    <Compile Include="NewConcept\View\IndicatorState.cs" />
-    <Compile Include="NewConcept\View\IStatsProvider.cs" />
-    <Compile Include="NewConcept\View\StatsIndicator.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="NewConcept\View\StatsIndicator.Designer.cs">
-      <DependentUpon>StatsIndicator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Old\Model\HistogramSerie.cs" />
-    <Compile Include="Old\Model\SerieBase.cs" />
-    <Compile Include="Old\Model\DataRepo.cs" />
-    <Compile Include="Old\Model\LineSerie.cs" />
-    <Compile Include="NewConcept\Chart\Point.cs" />
-    <Compile Include="NewConcept\Chart\SerieBase.cs" />
-    <Compile Include="NewConcept\Product.cs" />
-    <Compile Include="Old\Presenter\AutoSizeController.cs" />
-    <Compile Include="Old\Presenter\ChartPresenter.cs" />
-    <Compile Include="NewConcept\View\SplashScreenForm.cs">
+    <Compile Include="src\Utils\Config.cs" />
+    <Compile Include="src\Model\DBHelper.cs" />
+    <Compile Include="src\Model\HistogramSerie.cs" />
+    <Compile Include="src\Model\SerieBase.cs" />
+    <Compile Include="src\Model\DataRepo.cs" />
+    <Compile Include="src\Model\LineSerie.cs" />
+    <Compile Include="src\Presenter\AutoSizeController.cs" />
+    <Compile Include="src\Presenter\ChartPresenter.cs" />
+    <Compile Include="src\View\SplashScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewConcept\View\SplashScreenForm.Designer.cs">
