@@ -16,8 +16,6 @@ namespace ValueLens
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-
-
             var view = new MainForm();
 
             var presenter = new Presenter.ChartPresenter(view);
