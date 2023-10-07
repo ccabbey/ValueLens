@@ -57,7 +57,7 @@
             this.InfoLabel.Name = "InfoLabel";
             this.InfoLabel.Size = new System.Drawing.Size(101, 15);
             this.InfoLabel.TabIndex = 13;
-            this.InfoLabel.Text = "当前版本：V1.0.4";
+            this.InfoLabel.Text = "当前版本：V1.0.5";
             this.InfoLabel.Click += new System.EventHandler(this.InfoLabel_Click);
             // 
             // pictureBox1
@@ -77,9 +77,10 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(202, 190);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 15);
+            this.label1.Size = new System.Drawing.Size(165, 15);
             this.label1.TabIndex = 14;
-            this.label1.Text = "发行日期：2023-1-6 14:35";
+            this.label1.Text = "发行日期：2023-10-07 15:36";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 

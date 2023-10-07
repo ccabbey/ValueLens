@@ -2,6 +2,7 @@
 using ScottPlot.Plottable;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -143,14 +144,6 @@ namespace ValueLens.View
             AddAllPointsToMenu(list);
         }
 
-        private void QueryTop1000ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Presenter.QueryTop1000();
-
-            //var list = Presenter.Repo.GetPointsList();
-            //AddAllPointsToMenu(list);
-        }
-
         public void AddAllPointsToMenu(List<MPoint> list)
         {
             foreach (MPoint point in list)
@@ -189,8 +182,23 @@ namespace ValueLens.View
             }
 
             baseMenu.DropDownItems.Add(newPointItem);
-            //newPointItem.Checked = false;
+
+            //prevent menu strip close after click
+            baseMenu.DropDown.Closing += OnToolStripDropDownClosing;
+
+
         }
+
+        private void OnToolStripDropDownClosing(object sender, ToolStripDropDownClosingEventArgs e)
+        {
+            var tsdd = (ToolStripDropDown)sender;
+
+            // checking if mouse cursor is inside
+            Point p = tsdd.PointToClient(Control.MousePosition);
+            if (tsdd.DisplayRectangle.Contains(p))
+                e.Cancel = true;  // cancel closing
+        }
+
         public void OnClickAddPoint(MPoint point, ToolStripMenuItem item)
         {
             //FIXME isActive is always true, why?
@@ -214,6 +222,8 @@ namespace ValueLens.View
 
             Presenter.Repo.UpdateRawDataTable();
             Presenter.DrawPlot();
+
+            
         }
 
         public void AddPointItemToActiveMenu(MPoint point, ToolStripMenuItem menu)

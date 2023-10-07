@@ -60,11 +60,11 @@
             this.DBStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CoordLabel = new System.Windows.Forms.Label();
             this.ProductionVolumeLabel = new System.Windows.Forms.Label();
             this.histoPlot = new ScottPlot.FormsPlot();
             this.linePlot = new ScottPlot.FormsPlot();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CoordLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -101,31 +101,31 @@
             this.YPointsMenu,
             this.XPointsMenu});
             this.AllPointsMenu.Name = "AllPointsMenu";
-            this.AllPointsMenu.Size = new System.Drawing.Size(125, 22);
+            this.AllPointsMenu.Size = new System.Drawing.Size(180, 22);
             this.AllPointsMenu.Text = "All";
             // 
             // ZPointsMenu
             // 
             this.ZPointsMenu.Name = "ZPointsMenu";
-            this.ZPointsMenu.Size = new System.Drawing.Size(84, 22);
+            this.ZPointsMenu.Size = new System.Drawing.Size(180, 22);
             this.ZPointsMenu.Text = "Z";
             // 
             // YPointsMenu
             // 
             this.YPointsMenu.Name = "YPointsMenu";
-            this.YPointsMenu.Size = new System.Drawing.Size(84, 22);
+            this.YPointsMenu.Size = new System.Drawing.Size(180, 22);
             this.YPointsMenu.Text = "Y";
             // 
             // XPointsMenu
             // 
             this.XPointsMenu.Name = "XPointsMenu";
-            this.XPointsMenu.Size = new System.Drawing.Size(84, 22);
+            this.XPointsMenu.Size = new System.Drawing.Size(180, 22);
             this.XPointsMenu.Text = "X";
             // 
             // ActivePointsMenu
             // 
             this.ActivePointsMenu.Name = "ActivePointsMenu";
-            this.ActivePointsMenu.Size = new System.Drawing.Size(125, 22);
+            this.ActivePointsMenu.Size = new System.Drawing.Size(180, 22);
             this.ActivePointsMenu.Text = "Active(0)";
             // 
             // ChartConfigToolStripMenuItem
@@ -316,6 +316,16 @@
             this.panel1.Size = new System.Drawing.Size(1132, 618);
             this.panel1.TabIndex = 7;
             // 
+            // CoordLabel
+            // 
+            this.CoordLabel.AutoSize = true;
+            this.CoordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CoordLabel.Location = new System.Drawing.Point(531, 47);
+            this.CoordLabel.Name = "CoordLabel";
+            this.CoordLabel.Size = new System.Drawing.Size(29, 12);
+            this.CoordLabel.TabIndex = 9;
+            this.CoordLabel.Text = "坐标";
+            // 
             // ProductionVolumeLabel
             // 
             this.ProductionVolumeLabel.Font = new System.Drawing.Font("宋体", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -353,16 +363,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // CoordLabel
-            // 
-            this.CoordLabel.AutoSize = true;
-            this.CoordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.CoordLabel.Location = new System.Drawing.Point(531, 47);
-            this.CoordLabel.Name = "CoordLabel";
-            this.CoordLabel.Size = new System.Drawing.Size(29, 12);
-            this.CoordLabel.TabIndex = 9;
-            this.CoordLabel.Text = "坐标";
             // 
             // MainForm
             // 

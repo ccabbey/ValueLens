@@ -4,7 +4,7 @@ namespace ValueLens
 {
     public static class Config
     {
-        public const string Version = "v1.0.4";
+        public const string Version = "v1.0.5";
 
         //依据连接串名字connectionName返回数据连接字符串  
         public static string GetConnectionStringsConfig(string connectionName)
