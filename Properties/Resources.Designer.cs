@@ -63,10 +63,30 @@ namespace ValueLens.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap appIcon {
+            get {
+                object obj = ResourceManager.GetObject("appIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 图片1 {
             get {
                 object obj = ResourceManager.GetObject("图片1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Icon 图片3 {
+            get {
+                object obj = ResourceManager.GetObject("图片3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }
