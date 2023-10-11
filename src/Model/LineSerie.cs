@@ -52,7 +52,7 @@ namespace ValueLens.Model
                     YValues = newDt.AsEnumerable().Select(d => d.Field<double>(Name)).ToArray();
                     DateTimes = newDt.AsEnumerable().Select(d => d.Field<DateTime>(dateTimeFieldName)).ToArray();
                     break;
-                case "Int":
+                case "Int32":
                     int[] intData = newDt.AsEnumerable().Select(d => d.Field<int>(Name)).ToArray();
                     YValues = intData.Select(d => Convert.ToDouble(d)).ToArray();
                     DateTimes = newDt.AsEnumerable().Select(d => d.Field<DateTime>(dateTimeFieldName)).ToArray();
