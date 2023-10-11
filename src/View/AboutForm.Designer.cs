@@ -79,7 +79,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 15);
             this.label1.TabIndex = 14;
-            this.label1.Text = "发行日期：2023-10-07 15:36";
+            this.label1.Text = "发行日期：2023-10-11 15:36";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
