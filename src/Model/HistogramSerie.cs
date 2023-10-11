@@ -29,17 +29,24 @@ namespace ValueLens.Model
             DataTable newdt = dt.DefaultView.ToTable();
             //values = newdt.AsEnumerable().Select(d => d.Field<double>(Name)).ToArray();
 
-            //v1.0.4 优化Repo数据表结果包含空值时或类型不匹配报错
-            try
-            {
-                values = newdt.AsEnumerable().Select(d => Convert.ToDouble(d.Field<string>(Name).Trim())).ToArray();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"ValueLens Warning: 数据中存在空值。或数据值存储为浮点型而非字符串。VL将使用备选方案进行处理。");
-                values = newdt.AsEnumerable().Select(d => d.Field<double>(Name)).ToArray();
-            }
+            //v1.0.5 优化datatable字段数据类型检测
 
+            string dataTypeStr = newdt.Columns[Name].DataType.Name;
+
+            switch (dataTypeStr)
+            {
+                case "String":
+                    values = newdt.AsEnumerable().Select(d => Convert.ToDouble(d.Field<string>(Name).Trim())).ToArray();
+                    break;
+                case "Double":
+                    values = newdt.AsEnumerable().Select(d => d.Field<double>(Name)).ToArray();
+                    break;
+                case "Int32":
+                    values = newdt.AsEnumerable().Select(d => Convert.ToDouble(d.Field<int>(Name))).ToArray();
+                    break;
+                default: throw new Exception($"数据类型转换失败，数据源类型为：{dataTypeStr}");
+            }
+            
             //v1.0.3 优化数据波动很小时或很大时直方图binsize取值不合理问题
             var range = values.Max() - values.Min();
 
