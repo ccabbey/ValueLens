@@ -101,31 +101,31 @@
             this.YPointsMenu,
             this.XPointsMenu});
             this.AllPointsMenu.Name = "AllPointsMenu";
-            this.AllPointsMenu.Size = new System.Drawing.Size(180, 22);
+            this.AllPointsMenu.Size = new System.Drawing.Size(125, 22);
             this.AllPointsMenu.Text = "All";
             // 
             // ZPointsMenu
             // 
             this.ZPointsMenu.Name = "ZPointsMenu";
-            this.ZPointsMenu.Size = new System.Drawing.Size(180, 22);
+            this.ZPointsMenu.Size = new System.Drawing.Size(84, 22);
             this.ZPointsMenu.Text = "Z";
             // 
             // YPointsMenu
             // 
             this.YPointsMenu.Name = "YPointsMenu";
-            this.YPointsMenu.Size = new System.Drawing.Size(180, 22);
+            this.YPointsMenu.Size = new System.Drawing.Size(84, 22);
             this.YPointsMenu.Text = "Y";
             // 
             // XPointsMenu
             // 
             this.XPointsMenu.Name = "XPointsMenu";
-            this.XPointsMenu.Size = new System.Drawing.Size(180, 22);
+            this.XPointsMenu.Size = new System.Drawing.Size(84, 22);
             this.XPointsMenu.Text = "X";
             // 
             // ActivePointsMenu
             // 
             this.ActivePointsMenu.Name = "ActivePointsMenu";
-            this.ActivePointsMenu.Size = new System.Drawing.Size(180, 22);
+            this.ActivePointsMenu.Size = new System.Drawing.Size(125, 22);
             this.ActivePointsMenu.Text = "Active(0)";
             // 
             // ChartConfigToolStripMenuItem
@@ -141,13 +141,13 @@
             // 
             this.toggleCrosshairToolStripMenuItem.Enabled = false;
             this.toggleCrosshairToolStripMenuItem.Name = "toggleCrosshairToolStripMenuItem";
-            this.toggleCrosshairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toggleCrosshairToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.toggleCrosshairToolStripMenuItem.Text = "光标十字线";
             // 
             // toggleHoverToolStripMenuItem
             // 
             this.toggleHoverToolStripMenuItem.Name = "toggleHoverToolStripMenuItem";
-            this.toggleHoverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.toggleHoverToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.toggleHoverToolStripMenuItem.Text = "测点信息浮动显示";
             this.toggleHoverToolStripMenuItem.Click += new System.EventHandler(this.toggleHoverToolStripMenuItem_Click);
             // 

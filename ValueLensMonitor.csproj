@@ -145,7 +145,6 @@
     <Compile Include="src\View\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\View\IMainFormView.cs" />
     <Compile Include="src\View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,12 +155,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\View\MainForm.UIUpdate.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\View\SettingsView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\View\SettingsView.Designer.cs">
-      <DependentUpon>SettingsView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="src\View\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -182,9 +175,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="src\View\SettingsView.resx">
-      <DependentUpon>SettingsView.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
