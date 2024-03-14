@@ -65,6 +65,7 @@
             this.histoPlot = new ScottPlot.FormsPlot();
             this.linePlot = new ScottPlot.FormsPlot();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ToggleDataGridVisibilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -132,7 +133,8 @@
             // 
             this.ChartConfigToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toggleCrosshairToolStripMenuItem,
-            this.toggleHoverToolStripMenuItem});
+            this.toggleHoverToolStripMenuItem,
+            this.ToggleDataGridVisibilityToolStripMenuItem});
             this.ChartConfigToolStripMenuItem.Name = "ChartConfigToolStripMenuItem";
             this.ChartConfigToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.ChartConfigToolStripMenuItem.Text = "显示";
@@ -141,13 +143,13 @@
             // 
             this.toggleCrosshairToolStripMenuItem.Enabled = false;
             this.toggleCrosshairToolStripMenuItem.Name = "toggleCrosshairToolStripMenuItem";
-            this.toggleCrosshairToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.toggleCrosshairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.toggleCrosshairToolStripMenuItem.Text = "光标十字线";
             // 
             // toggleHoverToolStripMenuItem
             // 
             this.toggleHoverToolStripMenuItem.Name = "toggleHoverToolStripMenuItem";
-            this.toggleHoverToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.toggleHoverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.toggleHoverToolStripMenuItem.Text = "测点信息浮动显示";
             this.toggleHoverToolStripMenuItem.Click += new System.EventHandler(this.toggleHoverToolStripMenuItem_Click);
             // 
@@ -364,6 +366,15 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // ToggleDataGridVisibilityToolStripMenuItem
+            // 
+            this.ToggleDataGridVisibilityToolStripMenuItem.Checked = true;
+            this.ToggleDataGridVisibilityToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ToggleDataGridVisibilityToolStripMenuItem.Name = "ToggleDataGridVisibilityToolStripMenuItem";
+            this.ToggleDataGridVisibilityToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ToggleDataGridVisibilityToolStripMenuItem.Text = "显示数据网格";
+            this.ToggleDataGridVisibilityToolStripMenuItem.Click += new System.EventHandler(this.ToggleDataGridVisibilityToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -429,6 +440,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Label CoordLabel;
+        private System.Windows.Forms.ToolStripMenuItem ToggleDataGridVisibilityToolStripMenuItem;
     }
 }
 

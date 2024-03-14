@@ -442,5 +442,24 @@ namespace ValueLens.View
             }
 
         }
+
+        //v1.0.6 增加DatagridView显示/隐藏切换功能
+        
+        private void ToggleDataGridVisibilityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToggleDataGridVisibilityToolStripMenuItem.Checked = !ToggleDataGridVisibilityToolStripMenuItem.Checked;
+            bool dataGridVisible = ToggleDataGridVisibilityToolStripMenuItem.Checked;
+            if (dataGridVisible)
+            {
+                this.dataGridView1.Visible = true;
+                this.autoSizeController.AddControl(this.dataGridView1);
+            }
+            else
+            {
+                this.dataGridView1.Visible=false;
+                this.autoSizeController.RemoveControl(this.dataGridView1);
+            }
+            this.autoSizeController.AutoSize();
+        }
     }
 }

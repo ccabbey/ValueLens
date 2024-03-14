@@ -49,6 +49,14 @@ namespace ValueLens.Presenter
             _controls.Add(control);
         }
 
+        //v1.0.6 增加removeControl方法
+        public void RemoveControl(Control control)
+        {
+            _initControlRects.RemoveAt(getControlIndex(control));
+            _controls.Remove(control);
+        }
+        //
+
         private int getControlIndex(Control control)
         {
             return _controls.IndexOf(control);
@@ -69,6 +77,21 @@ namespace ValueLens.Presenter
             //}
 
             //遍历对控件进行缩放
+            ////v1.0.6 优化移除控件后，重新调整趋势图的比例，以便填满窗体空间
+            ////存储最低的控件位置
+            //int lowestBorderPosition = 0;
+            //foreach (Control ctl in _controls)
+            //{
+            //    if (ctl.Top + ctl.Height > lowestBorderPosition)
+            //    {
+            //        lowestBorderPosition = ctl.Top + ctl.Height;
+            //    }
+            //}
+            //if(lowestBorderPosition < _form.Height)
+            //{
+            //    lowestBorderPosition = _form.Height - 100;
+            //}
+
             foreach (Control ctl in _controls)
             {
                 if (AutoScaleEnabled)
@@ -80,6 +103,9 @@ namespace ValueLens.Presenter
                     ctl.Height = (int)(_initControlRects[id].Height * hScale);
                     //ctl.Width = _initControlRects[id].Width + _form.Width - _initFormRect.Width;
                     //ctl.Height = _initControlRects[id].Height + _form.Height- _initFormRect.Height;
+                
+                    
+                    
                 }
 
             }
